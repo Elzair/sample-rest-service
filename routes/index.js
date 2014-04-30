@@ -1,4 +1,5 @@
-var fs     = require('co-fs')
+var db     = require('../lib/db')
+  , fs     = require('co-fs')
   , parse  = require('co-body')
   ;
 
@@ -9,7 +10,9 @@ var fs     = require('co-fs')
  * Default route.
  */
 exports.index = function *() {
-  this.body = yield fs.readFile(__dirname + '/../README.md');
+  //this.body = yield fs.readFile(__dirname + '/../README.md');
+  var result = '';
+  
 };
 
 
