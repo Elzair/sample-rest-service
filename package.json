@@ -1,0 +1,23 @@
+{
+  "name": "sample-rest-service",
+  "version": "0.0.0",
+  "description": "Service to query a CSV file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony index.js"
+  },
+  "keywords": [
+    "koa",
+    "rest-service"
+  ],
+  "author": "Philip Woods",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "*",
+    "koa-route": "*",
+    "co-body": "*",
+    "koa-logger": "*",
+    "co-fs": "*"
+  }
+}
