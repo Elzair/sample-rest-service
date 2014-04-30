@@ -1,5 +1,4 @@
 var db     = require('../lib/db')
-  , fs     = require('co-fs')
   , parse  = require('co-body')
   ;
 
@@ -12,7 +11,7 @@ var db     = require('../lib/db')
 exports.index = function *() {
   //this.body = yield fs.readFile(__dirname + '/../README.md');
   var result = '';
-  
+  this.body = db.query({name: 'John'});
 };
 
 
