@@ -9,9 +9,14 @@ var db     = require('../lib/db')
  * Default route.
  */
 exports.index = function *() {
-  //this.body = yield fs.readFile(__dirname + '/../README.md');
-  var result = '';
-  this.body = db.query({name: 'John'});
+  this.body = yield db.print();
+};
+
+/**
+ * Query for items
+ */
+exports.search = function *() {
+  this.body = db.query(this.request.query);
 };
 
 

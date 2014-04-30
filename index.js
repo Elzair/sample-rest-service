@@ -16,6 +16,7 @@ app.use(logger());
 
 // Route middleware
 app.use(route.get('/', routes.index));
+app.use(route.get('/search', routes.search));
 
 // Create HTTP Server
 http.createServer(app.callback()).listen(port);
