@@ -25,6 +25,7 @@ app.use(function *(next) {
   try {
     access_log.log(util.format('%s %s', this.request.method, this.request.url));
     yield next;
+    access_log.log(JSON.stringify(this.body));
   }
   catch (e) {
     error_log.log(e);
