@@ -10,9 +10,11 @@ module.exports = {
   , tearDown: function(cb) {
       cb();
     }
-  , test_print: function(test) {
-      var results = db.print();
-      test_objects(test, results, test_data);
+  , test_query_first_name: function(test) {
+      var results = db.query({first_name: 'John'});
+      var data = [test_data[0]];
+      console.log(data);
+      test_objects(test, results, data);
       test.done();
     }
 };
