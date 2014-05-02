@@ -23,7 +23,7 @@ app.use(logger());
 // Error handler
 app.use(function *(next) {
   try {
-    access_log.log(util.format('%s %s', this.request.method, this.request.url));
+    access_log.log(util.format('%d %s %s', Date.now(), this.request.method, this.request.url));
     yield next;
     access_log.log(JSON.stringify(this.body));
   }
