@@ -1,6 +1,6 @@
 {
   "name": "sample-rest-service",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "description": "Service to query a CSV file",
   "main": "app.js",
   "scripts": {
@@ -18,5 +18,8 @@
     "koa-route": "*",
     "co-body": "*",
     "koa-logger": "*"
+  },
+  "devDependencies": {
+    "nodeunit": "~0.8.7"
   }
 }
