@@ -22,4 +22,10 @@ module.exports = {
       test_objects(test, results, data);
       test.done();
     }
+  , test_birth_date: function(test) {
+      var results = db.query({birth_date_begin: '2004-01-01', birth_date_end: '2006-01-01'});
+      var data = test_data.slice(3, 5);
+      test_objects(test, results, data);
+      test.done();
+    }
 };

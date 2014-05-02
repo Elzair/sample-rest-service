@@ -1,6 +1,6 @@
 {
   "name": "sample-rest-service",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Service to query a CSV file",
   "main": "app.js",
   "scripts": {
