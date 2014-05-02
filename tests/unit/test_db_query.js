@@ -28,4 +28,16 @@ module.exports = {
       test_objects(test, results, data);
       test.done();
     }
+  , test_favorite_color: function(test) {
+      var results = db.query({favorite_color: 'orange'});
+      var data = test_data.slice(5, 6);
+      test_objects(test, results, data);
+      test.done();
+    }
+  , test_ignore_case: function(test) {
+      var results = db.query({favorite_color: 'purple', ignore_case: true});
+      var data = test_data.slice(2, 3);
+      test_objects(test, results, data);
+      test.done();
+    }
 };
