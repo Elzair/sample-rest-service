@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+var reporter = require('nodeunit').reporters.default;
+
+// Change to unit subdirectory
+process.chdir(__dirname + '/unit');
+
+reporter.run([
+    'test_db_print.js'
+  //, 'test_db_query_first_name.js'
+  //, 'test_db_query_last_name.js'
+  //, 'test_db_query_birth_date.js'
+  //, 'test_db_query_favorite_color.js'
+  //, 'test_db_query_address.js'
+]);

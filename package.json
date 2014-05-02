@@ -1,10 +1,10 @@
 {
   "name": "sample-rest-service",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "Service to query a CSV file",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./tests/run_unit",
     "start": "node --harmony app.js"
   },
   "keywords": [
